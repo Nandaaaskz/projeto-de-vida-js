@@ -3,7 +3,7 @@
 
 :root {
     --cor-de-fundo: #1E1E1E;
-    --azul: #57FFEB;
+    --rosa: #BF7070;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -11,7 +11,7 @@
     --dias: #6BA1B2;
     --horas: #6BC669;
     --minutos: #C0BD6B;
-    --segundos: #FF5757
+    --segundos: #FF5757;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
     display: block;
 }
 
-.ativo {
+.botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 2px solid var(--rosa);
 }
@@ -81,6 +81,7 @@ body {
 
 .aba-conteudo.ativo {
     display: block;
+    border-radius:  0 0 40px 40px;
 }
 
 .aba-conteudo {
@@ -94,7 +95,7 @@ body {
 
 .aba-conteudo-titulo-secundario {
     text-align: center;
-    color: var(--verde);
+    color: var(--rosa);
     text-transform: uppercase;
 }
 
@@ -117,6 +118,22 @@ body {
     color: var(--verde);
     font-size: 20px;
     margin: 0;
+}
+
+.contador-digito-texto-d{
+    color: var(--dias);
+}
+
+.contador-digito-texto-h{
+    color: var(--horas);
+}
+
+.contador-digito-texto-m{
+    color: var(--minutos);
+}
+
+.contador-digito-texto-s{
+    color: var(--segundos);
 }
 
 @media screen and (min-width: 768px) {
